@@ -1,13 +1,20 @@
-gsap.to("#nav", {
-    backgroundColor: "#000",
+var crsr = document.querySelector("#cursor")
+document.addEventListener("mousemove", function(dets) {
+  crsr.style.left=dets.x+"px"
+  crsr.style.top=dets.y+"px"
+
+})
+
+gsap.to(`#nav`, {
+    backgroundColor: `#000`,
     duration: 0.5,
-    height: "110px",
+    height: `110px`,
     scrollTrigger: {
-      trigger: "#nav",
-      scroller: "body",
+      trigger: `#nav`,
+      scroller: `body`,
       // markers:true,
-      start: "top -10%",
-      end: "top -11%",
+      start: `top -10%`,
+      end: `top -11%`,
       scrub: 1,
     },
   });
