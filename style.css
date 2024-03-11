@@ -58,11 +58,11 @@ video{
 }
 #main{
     position: relative;
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.537);
 
 }
 #page1{
-    height: 110vh;
+    height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -176,3 +176,84 @@ video{
     font-size: 20px;
     line-height: 26px;
   }
+  #cards-container{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 70px;
+    z-index: 10;
+  }
+  .card{
+    height: 80%;
+    width: 24%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+
+    
+    
+  }
+  #card1{
+    background-image: url(card1.avif);
+  }
+  #card2 {
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  }
+  #card3 {
+    background-image: url(card3.avif);
+  }
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 30px;
+    padding-top: 160px;
+    transition: all ease 0.5s;
+
+    opacity: 0;
+  }
+  .overlay h4 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  .overlay p {
+    color: #000;
+    font-size: 15px;
+  }
+  .card:hover .overlay{
+    opacity: 1;
+  }
+  .card:hover {
+    transform: rotate3d(-1,1,0, 20deg)  }
+    #green-div {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+        background: linear-gradient(to left bottom, #119f3a, #ace022);
+      }
+      #green-div h4 {
+        width: 45%;
+        line-height: 50px;
+        color: #000;
+        text-align: center;
+        font-weight: 800;
+        font-size: 27px;
+        text-transform: uppercase;
+      }
+      #green-div img {
+        height: 100%;
+        object-fit: cover;
+        width: 14%;
+      }
+      
